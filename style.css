@@ -2,10 +2,37 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Laila',serif, sans-serif;
+}
+
+header {
+  padding-top: 2vh;
+  background-color:#ffffff;
+}
+
+footer{
+  text-align: center;
+  background-color: #272343;
+  color: white;
 }
 
 nav {
-  display: inline-block;
+  display: flex;
+  width: 90vw;
+  padding-left: 3vw;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  /* align-items:center; */
+  gap: 20px;
+}
+
+.nav-item {
+  padding-top: 5vh 0;
 }
 
 .container {
@@ -43,20 +70,30 @@ nav {
   background: url("head-sixth.jpg") center/cover;
 }
 
+aside {
+  background-color: #E3F6F5;  
+}
+
 .aside-wrapper {
-    /* padding: 0 auto; */
     display: flex;
     flex-direction: row;
     width: 100vw;
     justify-content: space-evenly;
     align-items: center;
-    /* gap: 5vw; */
+
+}
+
+.aside-text{
+  text-align: center;
+  padding: 2% 0;
 }
 
 .aside-item{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     width: 30vw;
     border: 2px solid blue;
 }
