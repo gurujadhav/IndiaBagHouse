@@ -2,23 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Laila',serif, sans-serif;
+  font-family: "Laila", serif, sans-serif;
 }
 
 header {
   padding-top: 2vh;
-  background-color:#ffffff;
-}
-
-footer{
-  text-align: center;
-  background-color: #272343;
-  color: white;
+  background-color: #ffffff;
 }
 
 nav {
   display: flex;
-  width: 90vw;
+  width: 97vw;
   padding-left: 3vw;
   justify-content: space-between;
 }
@@ -52,48 +46,81 @@ nav {
   /* text-shadow: 2px 2px 10px rgba(0,0,0,0.5); */
 }
 .slide:nth-child(1) {
-  background: url("head-first.jpg") center/cover;
+  background: url("./assets/head-first.jpg") center/cover;
 }
 .slide:nth-child(2) {
-  background: url("head-second.jpg") center/cover;
+  background: url("./assets/head-second.jpg") center/cover;
 }
 .slide:nth-child(3) {
-  background: url("head-third.jpg") center/cover;
+  background: url("./assets/head-third.jpg") center/cover;
 }
 .slide:nth-child(4) {
-  background: url("head-fourth.jpg") center/cover;
+  background: url("./assets/head-fourth.jpg") center/cover;
 }
 .slide:nth-child(5) {
-  background: url("head-fifth.webp") center/cover;
+  background: url("./assets/head-fifth.webp") center/cover;
 }
 .slide:nth-child(6) {
-  background: url("head-sixth.jpg") center/cover;
+  background: url("./assets/head-sixth.jpg") center/cover;
 }
 
 aside {
-  background-color: #E3F6F5;  
+  background-color: #e3f6f5;
 }
 
 .aside-wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    justify-content: space-evenly;
-    align-items: center;
-
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.aside-text{
+.aside-text {
   text-align: center;
   padding: 2% 0;
 }
 
-.aside-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 30vw;
-    border: 2px solid blue;
+.aside-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 30vw;
+  border: 2px solid blue;
+}
+
+.footer {
+  /* text-align: center; */
+  background-color: #163853;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5vw;
+}
+
+.footer-address {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #163853;
+  flex-direction: column;
+}
+
+.footer-address a {
+  width: 25vw;
+  text-decoration: none;
+  color: white;
+}
+
+.footer h4 {
+  color: red;
+  border-left: 2px solid whitesmoke;
+  padding: 5px;
+  letter-spacing: 0.5px;
+}
+
+.contact a {
+  padding-top: 10px;
+  padding-left: 20px;
 }
